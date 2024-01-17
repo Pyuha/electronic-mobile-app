@@ -1,0 +1,304 @@
+@font-face {
+    font-family: 'MusticaPro';
+    src: url(./fonts/MusticaproSemibold.otf)
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto.ttf)
+}
+
+.container-top {
+    width: 360px;
+    min-height: 957px;
+    max-height: 2330px;
+    border-radius: 40px;
+    padding: 67px 14px 62px 14px;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+/* ________________________страница главная__________________________________ */
+
+.header-top {
+    display:inline-block;
+    padding-bottom: 20px;
+}
+
+.logo {
+    padding-left: 140px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.main-menu {
+    font-family: 'Roboto';
+    font-size: 16px;
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    padding-left: 35px;
+}
+
+.main-menu li {
+    list-style: none;
+    display: inline; 
+    margin-right: 5px;
+    padding: 3px;
+}
+
+.promo {
+    background-image: url(../static/img/ad.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 372px 272px;
+    width: 360px;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    display:inline-block;
+}
+
+.promo-title {
+    font-family:'MusticaPro';
+    font-size: 16pt;
+    color: white;
+    width: 360px;
+    text-align: center;
+    position: bottom;
+}
+
+.promo p {
+    font-family: 'Roboto';
+    font-size: 14pt;
+    width: 360px;
+    text-align: center;
+}
+
+.btn {
+    border: 0;
+    border-radius: 10px;
+    background: #121212;
+    color: white;
+    outline: 1px solid white;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-left: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+  
+.btn:focus {
+    background: gray;
+    outline: none;
+    color: white;
+}
+
+h2 {
+    font-family:'MusticaPro';
+    font-size: 18pt;
+    color: white;
+}
+
+.about {
+    background-image: url(../static/img/bg.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 370px 270px;
+    width: 360px;
+    padding-top: 260px;
+    padding-bottom: 20px;
+    display:inline-block;
+}
+
+.about-text {
+    font-family: 'Roboto';
+    font-size: 14pt;
+    width: 360px;
+    text-align: center;
+}
+
+/* ________________________страница каталога__________________________________ */
+
+.stuff h1 {
+    font-family:'MusticaPro';
+    font-size: 36pt;
+    color: white;
+    text-align: center;
+}
+
+.stuff p {
+    font-family: 'Roboto';
+    font-size: 24pt;
+    width: 360px;
+}
+
+.view-stuff-item-text h2 {
+    font-family:'MusticaPro';
+    font-size: 16pt;
+    color: white;
+    text-align: center;
+}
+
+.view-stuff-item {
+    display: inline-table;
+    margin-bottom: 20px;
+    width: 360px;
+    text-align: center;
+}
+
+.view-stuff-item-text {
+    width: 360px;
+    text-align: center;
+}
+
+.view-stuff-item-img {
+    width: 288px;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.stuff input {
+    appearance: none;
+    border: 0;
+    border-radius: 10px;
+    background: #121212;
+    color: white;
+    outline: 1px solid white;
+    padding: 8px 16px;
+    font-size: 16px;
+    margin-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto';
+    font-size: 14px;
+}
+
+.stuff input:hover {
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+.main-screen-btn {
+    appearance: none;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Roboto';
+    font-size: 14px;
+    margin-top: 50px;
+    text-align: center;
+    display: block;
+}
+
+.main-screen-btn:hover {
+    background: white;
+    color: black;
+    text-decoration: none;
+}
+
+/* ________________________страница корзина__________________________________ */
+
+.basket h1 {
+    font-family:'MusticaPro';
+    font-size: 36pt;
+    color: white;
+    text-align: center;
+}
+
+.basket-table {
+	width: 100%;
+	border:#000000;
+    background-color: #000000;
+	margin-bottom: 20px;
+    border-radius: 20px;
+	border-collapse: separate;
+}
+
+.basket-table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: #000000;
+	padding: 10px 15px;
+	background: #000000;
+	font-size: 20px;
+	border-top: 1px solid #000000;
+    font-family:'MusticaPro';
+    color: white;
+}
+
+.basket-table thead tr th:first-child {
+	border-radius: 20px 0 0 0;
+}
+
+.basket-table thead tr th:last-child {
+	border-radius: 0 20px 0 0;
+}
+
+.basket-table tbody td {
+	text-align: left;
+	border: none;
+	vertical-align: center;
+    font-family: 'Roboto';
+    font-size: 11pt;
+    padding: 10px;
+	line-height: 20px;
+	border-top: 1px solid #ffffff;
+}
+
+.basket-table tbody tr:last-child td:first-child {
+	border-radius: 0 0 0 20px;
+}
+
+.basket-table tbody tr:last-child td:last-child {
+	border-radius: 0 0 20px 0;
+}
+
+.stuff-image img {
+    width: 100px;
+}
+
+/* ________________________страница подвала__________________________________ */
+
+footer {
+    padding-top: 25px;
+    width: 360px;
+    background-color: #000000;
+    padding-bottom: 10px;
+}
+
+.main-footer h2 {
+    padding-left: 20px;
+}
+
+.logo-footer li{
+    font-size: 14px;
+    font-family: 'Roboto';
+    white-space: pre-line;
+    display: inline-table;
+    padding-left: 20px;
+}
+

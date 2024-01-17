@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="../static/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+</head>
+<body>
+    <div class="container-top">
+        <header class="main-header">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo">
+                        <img src="../static/img/logo.png" alt="Логотип">
+                    </div>
+                    <nav class="main-menu">
+                        <ul>
+                            <li><a href="http://127.0.0.1:8000">Главная</a></li>
+                            <li><a href="http://127.0.0.1:8000/stuff/">Каталог</a></li>
+                            <li><a href="http://127.0.0.1:8000/basket/">Корзина</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <div class="stuff">
+            <h1>Ноутбуки</h1>
+            <section class="view-stuff">
+                {% for stuff in all_stuff %}
+                <div class="view-stuff-item">
+                    <img class="view-stuff-item-img" src="{{stuff.promo}}" alt="promo">
+                        <div class="view-stuff-item-text">
+                            <h2>{{stuff.title}}</h2>
+                            <p>{{stuff.price}} ₽</p>
+
+                            <form action="{% url 'stuff' %}" method="post">
+                                {% csrf_token %}
+                                <input type='hidden' name="stuff_title" value="{{stuff.title}}"/>
+                                <input class="basket-order-button" type="submit" name="add_to_basket" value="В корзину">
+                            </form>
+                        </div>
+                    </div>                
+                {% endfor %}
+            </section>
+        </div>
+        <a class="main-screen-btn" href="{% url 'main' %}">На главную</a>
+        <footer class="main-footer">
+            <div class="container"> 
+                <h2>ASP SERSO</h2>
+                <div class="logo-footer">
+                    <li>Город: Москва
+                        Адрес: Колодезный пер., д. 3, стр.25 , 
+                        Вход в Серсо расположен на Русаковской 
+                        набережной у метромоста. 
+                        Тел. (Ремонт) : (495) 967-3872, (495) 926-8313
+                        Часы работы: ПН-ВС 9:00 - 21:00
+                    
+                        © 2023. Все права защищены</li>
+                    <li><a class="navigation-item" href="{% url 'main' %}">Главная</a></li>
+                    <li><a class="navigation-item" href="{% url 'basket' %}">Корзина</a></li>
+                </div> 
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
